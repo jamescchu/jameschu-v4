@@ -1,0 +1,14 @@
+{
+	"name": "jamescchu/jameschu-v4",
+	"description": "",
+	"license": "proprietary",
+	"version": "1.0-dev",
+	"type": "project",
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "1.16.2"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
