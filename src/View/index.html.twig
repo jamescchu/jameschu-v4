@@ -3,9 +3,11 @@
 {% block content %}
 <ul class="work">
   {% for work in works %}
-  <li>
-    <h2>{{ work.name }}</h2>
-    <h3>{{ work.position }}</h3>
+  <li style="background-image: url('/thumbnails/{{ work.slug}}.png');">
+    <a href="/works/{{ work.slug }}">
+      <h2>{{ work.name }}</h2>
+      <h3>{{ work.position }}</h3>
+    </a>
   </li>
   {% endfor %}
 </ul>
