@@ -4,5 +4,8 @@
 
 {% block content %}
   {% include 'works/' ~ work.template %}
-  <a href="/works/{{ work.slug }}/process">View Process</a>
+  <a href="/works/{{ work.slug }}/process" class="view-process-button">
+    View <br />
+    Process
+  </a>
 {% endblock %}

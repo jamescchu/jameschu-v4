@@ -158,3 +158,19 @@ div[role=main] {
     font-style: italic;
   }
 }
+
+.view-process-button {
+  position: fixed;
+  right: 0;
+  top: 460px;
+  padding: 40px 80px 40px 40px;
+  text-decoration: none;
+  color: $dark;
+  background-color: rgba(231, 232, 233, 0.3);
+  font-size: 1.6em;
+  line-height: 1.3em;
+
+  &:hover {
+    background-color: rgba(231, 232, 233, 0.6);
+  }
+}
