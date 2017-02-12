@@ -1,9 +1,50 @@
+@import "compass/reset";
+@import "compass/css3/flexbox";
+
+$light: #F9F9F9;
+$dark: #313439;
+$gray: #7D8086;
+$accent: #E7E8E9;
+
 body {
-  background-color: #F9F9F9;
+  background-color: $light;
   padding: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%;
 }
 
 .wrapper {
-  width: 983px;
+  max-width: 983px;
   margin: 0 auto;
+}
+
+header {
+  text-align: center;
+
+  h1 {
+    font-size: 3.6em;
+    text-transform: lowercase;
+    color: $dark;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      @include display-flex;
+      @include justify-content(center);
+
+      li {
+        a {
+          padding: 10px;
+          text-decoration: none;
+          color: $gray;
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
 }
