@@ -98,7 +98,28 @@ header {
     min-width: 314px;
     min-height: 314px;
     margin: 10px 10px;
-    background-color: #E8E9EA; }
+    background-color: #E8E9EA;
+    position: relative; }
+    .works li a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    .works li .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 20px; }
+      .works li .info h2 {
+        font-size: 1.8em;
+        font-weight: normal;
+        color: #313439;
+        margin-bottom: 5px; }
+      .works li .info h3 {
+        font-size: 1.4em;
+        font-weight: 100;
+        color: #313439; }
 
 footer {
   margin: 80px 0;
