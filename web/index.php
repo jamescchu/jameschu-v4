@@ -13,4 +13,5 @@ $app->container->singleton('template', function () {
 
 // routes
 $app->get('/', [new \App\Controller\SiteController($app), 'index'])->setName('home');
+$app->get('/about', [new \App\Controller\SiteController($app), 'about'])->setName('about');
 $app->run();

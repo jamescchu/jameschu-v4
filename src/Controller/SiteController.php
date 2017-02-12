@@ -8,4 +8,9 @@ class SiteController extends Controller
     {
         $this->render('index.html.twig', []);
     }
+
+    public function about()
+    {
+        $this->render('about.html.twig', []);
+    }
 }
