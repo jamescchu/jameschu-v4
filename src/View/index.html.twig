@@ -1,7 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-<div class="container">
-  <p>Hello world!</p>
-</div>
+<ul class="work">
+  {% for work in works %}
+  <li>
+    <h2>{{ work.name }}</h2>
+    <h3>{{ work.position }}</h3>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock %}
