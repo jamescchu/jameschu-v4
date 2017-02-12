@@ -112,3 +112,49 @@ footer {
   color: $gray;
   text-align: center;
 }
+
+.row {
+  overflow: hidden;
+  margin: -10px -10px 30px -10px;
+  width: calc(100% + 20px);
+  @include display-flex;
+
+  .col {
+    margin: 10px;
+  }
+
+  .half {
+    width: 50%;
+  }
+}
+
+p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  color: $dark;
+}
+
+.show {
+  text-align: center;
+  margin: 20px;
+  width: 100%;
+}
+
+div[role=main] {
+  h2 {
+    color: $dark;
+    font-weight: 600;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+  }
+
+  blockquote {
+    color: $gray;
+    padding-left: 20px;
+    border-left: 4px solid $gray;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    font-style: italic;
+  }
+}
