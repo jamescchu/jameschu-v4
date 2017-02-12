@@ -17,24 +17,26 @@
     <![endif]-->
 </head>
 <body>
-<header>
-  <h1>James Chu</h1>
-  <nav>
-    {% block nav %}
-    <ul>
-      <li><a href="#">work</a></li>
-      <li><a href="/about">info</a></li>
-    </ul>
-    {% endblock %}
-  </nav>
-</header>
-<div role="main">
-{% block content %}
-{% endblock %}
+<div class="wrapper">
+  <header>
+    <h1>James Chu</h1>
+    <nav>
+      {% block nav %}
+      <ul>
+        <li><a href="#">work</a></li>
+        <li><a href="/about">info</a></li>
+      </ul>
+      {% endblock %}
+    </nav>
+  </header>
+  <div role="main">
+  {% block content %}
+  {% endblock %}
+  </div>
+  <footer>
+    &copy; james chu. all rights reserved
+  </footer>
 </div>
-<footer>
-  &copy; james chu. all rights reserved
-</footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

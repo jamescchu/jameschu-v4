@@ -2,3 +2,5 @@
 /vendor/
 /composer.phar
 !.gitkeep
+config.codekit
+/assets/scss/.sass-cache
