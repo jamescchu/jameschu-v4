@@ -56,7 +56,9 @@ body {
   margin: 0 auto; }
 
 header {
-  text-align: center; }
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 80px; }
   header h1 {
     font-size: 3.6em;
     text-transform: lowercase;
@@ -76,3 +78,30 @@ header {
       text-decoration: none;
       color: #7D8086;
       font-size: 1.6em; }
+      header nav ul li a:hover {
+        color: #E8E9EA; }
+      header nav ul li a.active {
+        color: #313439; }
+
+.works {
+  width: calc(100% + 20px);
+  margin: -10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .works li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 314px;
+    min-height: 314px;
+    margin: 10px 10px;
+    background-color: #E8E9EA; }
+
+footer {
+  margin: 80px 0;
+  font-size: 1.4em;
+  color: #7D8086;
+  text-align: center; }

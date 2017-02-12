@@ -4,6 +4,7 @@
 $light: #F9F9F9;
 $dark: #313439;
 $gray: #7D8086;
+$gray2: #E8E9EA;
 $accent: #E7E8E9;
 
 body {
@@ -19,7 +20,9 @@ body {
 }
 
 header {
+  margin-top: 60px;
   text-align: center;
+  margin-bottom: 80px;
 
   h1 {
     font-size: 3.6em;
@@ -43,8 +46,40 @@ header {
           text-decoration: none;
           color: $gray;
           font-size: 1.6em;
+
+          &:hover {
+            color: $gray2;
+          }
+
+          &.active {
+            color: $dark;
+          }
         }
       }
     }
   }
+}
+
+.works {
+  width: calc(100% + 20px);
+  margin: -10px;
+  @include display-flex;
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+
+  li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 314px;
+    min-height: 314px;
+    margin: 10px 10px;
+    background-color: $gray2;
+  }
+}
+
+footer {
+  margin: 80px 0;
+  font-size: 1.4em;
+  color: $gray;
+  text-align: center;
 }

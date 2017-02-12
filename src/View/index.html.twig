@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-<ul class="work">
+<ul class="works">
   {% for work in works %}
   <li style="background-image: url('/thumbnails/{{ work.slug}}.png');">
     <a href="/works/{{ work.slug }}">
