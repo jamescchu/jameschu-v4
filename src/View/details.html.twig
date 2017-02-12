@@ -3,5 +3,6 @@
 {% block title %}James Chu - {{ work.name}}{% endblock %}
 
 {% block content %}
-{% include 'works/' ~ work.template %}
+  {% include 'works/' ~ work.template %}
+  <a href="/works/{{ work.slug }}/process">View Process</a>
 {% endblock %}

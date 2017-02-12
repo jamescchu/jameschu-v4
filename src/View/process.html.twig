@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}James Chu - {{ work.name}} - process{% endblock %}
+
+{% block content %}
+  {% include 'process/' ~ work.template %}
+{% endblock %}

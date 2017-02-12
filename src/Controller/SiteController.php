@@ -39,6 +39,15 @@ class SiteController extends Controller
       $this->render('details.html.twig', ['work' => self::$works[$slug]]);
     }
 
+    public function process($slug)
+    {
+      if (!isset(self::$works[$slug])) {
+        $this->render('404.html.twig', []);
+      }
+
+      $this->render('process.html.twig', ['work' => self::$works[$slug]]);
+    }
+
     public function about()
     {
         $this->render('about.html.twig', []);
