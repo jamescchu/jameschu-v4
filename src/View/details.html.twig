@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}James Chu - {{ work.name}}{% endblock %}
+{% block heading %}{{ work.name }}{% endblock %}
 
 {% block content %}
   {% include 'works/' ~ work.template %}
