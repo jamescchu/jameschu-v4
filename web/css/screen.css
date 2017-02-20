@@ -52,7 +52,7 @@ body {
   font-size: 62.5%; }
 
 .wrapper {
-  max-width: 983px;
+  max-width: 1170px;
   margin: 0 auto; }
 
 header {
@@ -95,8 +95,8 @@ header {
   .works li {
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: 314px;
-    min-height: 314px;
+    min-width: 350px;
+    min-height: 350px;
     margin: 10px 10px;
     background-color: #E8E9EA;
     position: relative; }
@@ -146,8 +146,8 @@ p {
 
 .show {
   text-align: center;
-  margin: 20px;
-  width: 100%; }
+  margin: 0 auto;
+  max-width: 80%; }
   .show img {
     width: 100%; }
 

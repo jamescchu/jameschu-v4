@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-  max-width: 983px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -70,8 +70,8 @@ header {
   li {
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: 314px;
-    min-height: 314px;
+    min-width: 350px;
+    min-height: 350px;
     margin: 10px 10px;
     background-color: $gray2;
     position: relative;
@@ -137,8 +137,8 @@ p {
 
 .show {
   text-align: center;
-  margin: 20px;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 80%;
   img {
     width: 100%;
   }
