@@ -8,20 +8,26 @@ class SiteController extends Controller
       'major-league-gaming' => [
         'slug' => 'major-league-gaming',
         'name' => 'major league gaming',
-        'position' => 'art direction',
+        'position' => 'art direction, research and strategy',
         'template' => 'major_league_gaming.html.twig',
       ],
       'critr' => [
         'slug' => 'critr',
         'name' => 'critr',
-        'position' => 'ux/ui',
+        'position' => 'ux/ui, research and strategy, prototyping',
         'template' => 'critr.html.twig',
       ],
-      'redbox' => [
-        'slug' => 'redbox',
-        'name' => 'redbox',
-        'position' => 'art direction',
-        'template' => 'redbox.html.twig',
+      'chanbara' => [
+        'slug' => 'chanbara',
+        'name' => 'chanbara poster',
+        'position' => 'typography, print making',
+        'template' => 'chanbara.html.twig',
+      ],
+      'Elysium' => [
+        'slug' => 'elysium',
+        'name' => 'elysium book',
+        'position' => 'typography, book making, creative writing',
+        'template' => 'elysium.html.twig',
       ],
     ];
 

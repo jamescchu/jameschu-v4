@@ -52,7 +52,7 @@ body {
   font-size: 62.5%; }
 
 .wrapper {
-  max-width: 983px;
+  max-width: 1170px;
   margin: 0 auto; }
 
 .scrolled .wrapper {
@@ -107,8 +107,8 @@ header {
   .works li {
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: 314px;
-    min-height: 314px;
+    min-width: 47%;
+    min-height: 350px;
     margin: 10px 10px;
     background-color: #E8E9EA;
     position: relative; }
@@ -161,7 +161,15 @@ p {
 
 .show {
   text-align: center;
-  margin: 20px;
+  margin: 0 auto;
+  max-width: 80%; }
+  .show img {
+    width: 100%; }
+
+.show-carousel {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 80%;
   width: 100%; }
 
 div[role=main] h2 {
@@ -189,9 +197,6 @@ div[role=main] blockquote {
   line-height: 1.3em; }
   .view-process-button:hover {
     background-color: rgba(231, 232, 233, 0.6); }
-
-.carousel {
-  background: #EEE; }
 
 .carousel-cell {
   width: 100%;

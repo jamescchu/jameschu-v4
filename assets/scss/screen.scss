@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-  max-width: 983px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -87,8 +87,8 @@ header {
   li {
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: 314px;
-    min-height: 314px;
+    min-width: 47%;
+    min-height: 350px;
     margin: 10px 10px;
     background-color: $gray2;
     position: relative;
@@ -159,7 +159,18 @@ p {
 
 .show {
   text-align: center;
-  margin: 20px;
+  margin: 0 auto;
+  max-width: 80%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.show-carousel {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 80%;
   width: 100%;
 }
 
@@ -195,11 +206,6 @@ div[role=main] {
   &:hover {
     background-color: rgba(231, 232, 233, 0.6);
   }
-}
-
-
-.carousel {
-  background: #EEE;
 }
 
 .carousel-cell {
