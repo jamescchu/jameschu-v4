@@ -148,6 +148,8 @@ p {
   text-align: center;
   margin: 20px;
   width: 100%; }
+  .show img {
+    width: 100%; }
 
 div[role=main] h2 {
   color: #313439;
