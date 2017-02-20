@@ -19,6 +19,23 @@ body {
   margin: 0 auto;
 }
 
+.scrolled {
+  .wrapper {
+    padding-top: 200px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($light, .8);
+    margin-top: 0;
+    padding: 20px;
+    z-index: 1000;
+  }
+}
+
 header {
   margin-top: 60px;
   text-align: center;

@@ -43,6 +43,16 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 90) {
+      $("body").addClass("scrolled");
+    } else {
+      $("body").removeClass("scrolled");
+    }
+  });
+</script>
 {% block extra_scripts %}{% endblock %}
 </body>
 </html>
