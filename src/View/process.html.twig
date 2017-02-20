@@ -5,6 +5,10 @@
 
 {% block content %}
   {% include 'process/' ~ work.template %}
+  <a href="/works/{{ work.slug }}" class="view-process-button">
+    Back to <br />
+    Project
+  </a>
 {% endblock %}
 
 {% block extra_stylesheets %}
