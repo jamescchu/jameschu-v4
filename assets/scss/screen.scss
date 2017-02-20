@@ -128,6 +128,11 @@ footer {
   }
 }
 
+.row-carousel {
+  @extend .row;
+  overflow: visible;
+}
+
 p {
   font-size: 1.6em;
   line-height: 1.5em;
@@ -173,4 +178,17 @@ div[role=main] {
   &:hover {
     background-color: rgba(231, 232, 233, 0.6);
   }
+}
+
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
 }

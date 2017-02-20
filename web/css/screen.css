@@ -127,16 +127,19 @@ footer {
   color: #7D8086;
   text-align: center; }
 
-.row {
+.row, .row-carousel {
   overflow: hidden;
   margin: -10px -10px 30px -10px;
   width: calc(100% + 20px);
   display: -webkit-flex;
   display: flex; }
-  .row .col {
+  .row .col, .row-carousel .col {
     margin: 10px; }
-  .row .half {
+  .row .half, .row-carousel .half {
     width: 50%; }
+
+.row-carousel {
+  overflow: visible; }
 
 p {
   font-size: 1.6em;
@@ -174,3 +177,13 @@ div[role=main] blockquote {
   line-height: 1.3em; }
   .view-process-button:hover {
     background-color: rgba(231, 232, 233, 0.6); }
+
+.carousel {
+  background: #EEE; }
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell; }
