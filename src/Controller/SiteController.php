@@ -23,7 +23,7 @@ class SiteController extends Controller
         'position' => 'typography, print making',
         'template' => 'chanbara.html.twig',
       ],
-      'Elysium' => [
+      'elysium' => [
         'slug' => 'elysium',
         'name' => 'elysium book',
         'position' => 'typography, book making, creative writing',
@@ -42,7 +42,35 @@ class SiteController extends Controller
         $this->render('404.html.twig', []);
       }
 
-      $this->render('details.html.twig', ['work' => self::$works[$slug]]);
+      // Init variables
+      $currentIndex = array_search($slug, array_keys(self::$works));
+      $prev = null;
+      $next = null;
+      $temporaryPrev = null;
+
+      foreach (self::$works as $key => $work) {
+        // If the current key matches the slug we have to set the previous link
+        // with the temporarily saved link
+        if ($key === $slug) {
+          $prev = isset($temporaryPrev) ? $temporaryPrev : false;
+          continue;
+        }
+
+        // If we have already found the current link we have to set the next link
+        if (isset($prev) || $prev === false) {
+          $next = $work['slug'];
+          break;
+        }
+
+        // Save temporarily saved previous link
+        $temporaryPrev = $work['slug'];
+      }
+
+      $this->render('details.html.twig', [
+        'work' => self::$works[$slug],
+        'prev' => $prev,
+        'next' => $next,
+      ]);
     }
 
     public function process($slug)
