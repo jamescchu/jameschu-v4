@@ -31,17 +31,7 @@ class SiteController extends Controller
       ],
     ];
 
-    public function index()
-    {
-        $this->render('index.html.twig', ['works' => self::$works]);
-    }
-
-    public function details($slug)
-    {
-      if (!isset(self::$works[$slug])) {
-        $this->render('404.html.twig', []);
-      }
-
+    private function getNavigation($slug) {
       // Init variables
       $currentIndex = array_search($slug, array_keys(self::$works));
       $prev = null;
@@ -66,10 +56,29 @@ class SiteController extends Controller
         $temporaryPrev = $work['slug'];
       }
 
-      $this->render('details.html.twig', [
-        'work' => self::$works[$slug],
+      return [
         'prev' => $prev,
         'next' => $next,
+      ];
+    }
+
+    public function index()
+    {
+        $this->render('index.html.twig', ['works' => self::$works]);
+    }
+
+    public function details($slug)
+    {
+      if (!isset(self::$works[$slug])) {
+        $this->render('404.html.twig', []);
+      }
+
+      $navigation = $this->getNavigation($slug);
+
+      $this->render('details.html.twig', [
+        'work' => self::$works[$slug],
+        'prev' => $navigation['prev'],
+        'next' => $navigation['next'],
       ]);
     }
 
@@ -79,7 +88,13 @@ class SiteController extends Controller
         $this->render('404.html.twig', []);
       }
 
-      $this->render('process.html.twig', ['work' => self::$works[$slug]]);
+      $navigation = $this->getNavigation($slug);
+
+      $this->render('process.html.twig', [
+        'work' => self::$works[$slug],
+        'prev' => $navigation['prev'],
+        'next' => $navigation['next'],
+      ]);
     }
 
     public function about()
