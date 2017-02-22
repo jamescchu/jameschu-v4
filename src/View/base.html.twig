@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}James Chu{% endblock %}</title>
 
-    <!-- Bootstrap -->
     <link href="/css/screen.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
@@ -41,17 +40,27 @@
   </footer>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript">
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 90) {
-      $("body").addClass("scrolled");
-    } else {
-      $("body").removeClass("scrolled");
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
     }
-  });
+  }
 </script>
 {% block extra_scripts %}{% endblock %}
 </body>

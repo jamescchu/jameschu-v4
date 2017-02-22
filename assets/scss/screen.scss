@@ -20,23 +20,19 @@ body {
 }
 
 .scrolled {
-  .wrapper {
-    padding-top: 200px;
-  }
-
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba($light, .8);
-    margin-top: 0;
-    padding: 20px;
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($light, .8);
+  transition: all 300ms ease-in-out;
+  margin-top: 0;
+  padding: 20px;
+  z-index: 1000;
 }
 
 header {
+  position: static;
   margin-top: 60px;
   text-align: center;
   margin-bottom: 80px;
@@ -132,13 +128,10 @@ footer {
 
 .row {
   overflow: hidden;
-  margin: -10px -10px 30px -10px;
+  margin: 80px 0;
+  //margin: -10px -10px 30px -10px;
   width: calc(100% + 20px);
   @include display-flex;
-
-  .col {
-    margin: 10px;
-  }
 
   .half {
     width: 50%;
@@ -160,7 +153,6 @@ p {
 .show {
   text-align: center;
   margin: 0 auto;
-  max-width: 80%;
 
   img {
     width: 100%;
@@ -170,7 +162,6 @@ p {
 .show-carousel {
   text-align: center;
   margin: 20px auto;
-  max-width: 80%;
   width: 100%;
 }
 

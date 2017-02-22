@@ -55,19 +55,19 @@ body {
   max-width: 1170px;
   margin: 0 auto; }
 
-.scrolled .wrapper {
-  padding-top: 200px; }
-.scrolled header {
+.scrolled {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: rgba(249, 249, 249, 0.8);
+  transition: all 300ms ease-in-out;
   margin-top: 0;
   padding: 20px;
   z-index: 1000; }
 
 header {
+  position: static;
   margin-top: 60px;
   text-align: center;
   margin-bottom: 80px; }
@@ -141,12 +141,10 @@ footer {
 
 .row, .row-carousel {
   overflow: hidden;
-  margin: -10px -10px 30px -10px;
+  margin: 80px 0;
   width: calc(100% + 20px);
   display: -webkit-flex;
   display: flex; }
-  .row .col, .row-carousel .col {
-    margin: 10px; }
   .row .half, .row-carousel .half {
     width: 50%; }
 
@@ -161,15 +159,13 @@ p {
 
 .show {
   text-align: center;
-  margin: 0 auto;
-  max-width: 80%; }
+  margin: 0 auto; }
   .show img {
     width: 100%; }
 
 .show-carousel {
   text-align: center;
   margin: 20px auto;
-  max-width: 80%;
   width: 100%; }
 
 div[role=main] h2 {
