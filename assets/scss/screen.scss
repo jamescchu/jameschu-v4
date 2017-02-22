@@ -50,6 +50,7 @@ header {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      transition: all 300ms ease-in-out;
       @include display-flex;
       @include justify-content(center);
 
@@ -129,12 +130,13 @@ footer {
 .row {
   overflow: hidden;
   margin: 80px 0;
+  justify-content: space-between;
   //margin: -10px -10px 30px -10px;
-  width: calc(100% + 20px);
+  width: 100%;
   @include display-flex;
 
   .half {
-    width: 50%;
+    width: 45%;
   }
 }
 
@@ -174,6 +176,7 @@ div[role=main] {
   }
 
   blockquote {
+    width: 80%;
     color: $gray;
     padding-left: 20px;
     border-left: 4px solid $gray;
