@@ -3,6 +3,18 @@
 {% block title %}James Chu - {{ work.name}} - process{% endblock %}
 {% block heading %}{{ work.name }}{% endblock %}
 
+{% block nav %}
+<ul>
+  {% if prev %}
+  <li><a href="/works/{{ prev }}">prev</a></li>
+  {% endif %}
+  <li><a href="/">home</a></li>
+  {% if next %}
+  <li><a href="/works/{{ next }}">next</a></li>
+  {% endif %}
+</ul>
+{% endblock %}
+
 {% block content %}
   {% include 'process/' ~ work.template %}
   <a href="/works/{{ work.slug }}" class="view-process-button">

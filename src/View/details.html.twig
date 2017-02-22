@@ -6,11 +6,11 @@
 {% block nav %}
 <ul>
   {% if prev %}
-  <li><a href="/">prev</a></li>
+  <li><a href="/works/{{ prev }}">prev</a></li>
   {% endif %}
   <li><a href="/">home</a></li>
   {% if next %}
-  <li><a href="/">next</a></li>
+  <li><a href="/works/{{ next }}">next</a></li>
   {% endif %}
 </ul>
 {% endblock %}
