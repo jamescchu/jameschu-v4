@@ -109,6 +109,7 @@ header {
         font-weight: normal;
         color: $dark;
         margin-bottom: 5px;
+        text-transform: lowercase;
       }
 
       h3 {
@@ -173,6 +174,7 @@ div[role=main] {
     font-weight: 600;
     font-size: 1.8em;
     margin-bottom: 40px;
+    text-transform: lowercase;
   }
 
   blockquote {
