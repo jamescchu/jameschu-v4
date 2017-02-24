@@ -7,27 +7,27 @@ class SiteController extends Controller
     static $works = [
       'major-league-gaming' => [
         'slug' => 'major-league-gaming',
-        'name' => 'major league gaming',
+        'name' => 'Major League Gaming',
         'position' => 'art direction, research and strategy',
-        'template' => 'major_league_gaming.html.twig',
+        'template' => 'major-league-gaming.html.twig',
       ],
       'critr' => [
         'slug' => 'critr',
-        'name' => 'critr',
+        'name' => 'Critr',
         'position' => 'ux/ui, research and strategy, prototyping',
         'template' => 'critr.html.twig',
       ],
-      'chanbara' => [
-        'slug' => 'chanbara',
-        'name' => 'chanbara poster',
-        'position' => 'typography, print making',
-        'template' => 'chanbara.html.twig',
-      ],
       'elysium' => [
         'slug' => 'elysium',
-        'name' => 'elysium book',
+        'name' => 'Elysium Book',
         'position' => 'typography, book making, creative writing',
         'template' => 'elysium.html.twig',
+      ],
+      'great-writer' => [
+        'slug' => 'great-writer',
+        'name' => 'Great Writer Series',
+        'position' => 'typography, print making',
+        'template' => 'great-writer.html.twig',
       ],
     ];
 
