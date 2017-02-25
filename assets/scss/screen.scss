@@ -88,6 +88,7 @@ header {
     min-height: 350px;
     margin: 10px 10px;
     background-color: $gray2;
+    background-size: cover;
     position: relative;
 
     a {
@@ -103,6 +104,8 @@ header {
       right: 0;
       text-align: center;
       padding: 20px;
+      background-color: rgba($light, .8);
+
 
       h2 {
         font-size: 1.8em;
