@@ -197,20 +197,20 @@ div[role=main] {
   top: 460px;
   padding: 40px 80px 40px 40px;
   text-decoration: none;
-  color: $dark;
-  background-color: rgba(231, 232, 233, 0.3);
+  color: $light;
+  background-color: rgba($dark, 0.3);
   font-size: 1.6em;
   line-height: 1.3em;
 
   &:hover {
-    background-color: rgba(231, 232, 233, 0.6);
+    background-color: rgba($dark, 0.6);
   }
 }
 
 .carousel-cell {
   width: 100%;
   margin-right: 10px;
-  background: #8C8;
+  background: $gray;
   border-radius: 5px;
   counter-increment: gallery-cell;
 }

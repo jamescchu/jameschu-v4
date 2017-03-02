@@ -194,16 +194,16 @@ div[role=main] blockquote {
   top: 460px;
   padding: 40px 80px 40px 40px;
   text-decoration: none;
-  color: #313439;
-  background-color: rgba(231, 232, 233, 0.3);
+  color: #F9F9F9;
+  background-color: rgba(49, 52, 57, 0.3);
   font-size: 1.6em;
   line-height: 1.3em; }
   .view-process-button:hover {
-    background-color: rgba(231, 232, 233, 0.6); }
+    background-color: rgba(49, 52, 57, 0.6); }
 
 .carousel-cell {
   width: 100%;
   margin-right: 10px;
-  background: #8C8;
+  background: #7D8086;
   border-radius: 5px;
   counter-increment: gallery-cell; }
