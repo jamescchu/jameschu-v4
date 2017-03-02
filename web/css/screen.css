@@ -108,12 +108,17 @@ header {
   .works li {
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: 47%;
-    min-height: 350px;
-    margin: 10px 10px;
+    min-height: 300px;
+    min-width: 100%;
+    margin: 10px 0;
     background-color: #E8E9EA;
     background-size: cover;
     position: relative; }
+    @media (min-width: 767px) {
+      .works li {
+        min-height: 350px;
+        min-width: 47%;
+        margin: 10px 10px; } }
     .works li a {
       display: block;
       width: 100%;
@@ -125,7 +130,7 @@ header {
       right: 0;
       text-align: center;
       padding: 20px;
-      background-color: rgba(249, 249, 249, 0.8); }
+      background-color: rgba(249, 249, 249, 0.5); }
       .works li .info h2 {
         font-size: 1.8em;
         font-weight: normal;
@@ -151,7 +156,12 @@ footer {
   display: -webkit-flex;
   display: flex; }
   .row .half, .row-carousel .half {
-    width: 45%; }
+    width: 100%; }
+    @media (min-width: 767px) {
+      .row .half, .row-carousel .half {
+        width: 45%; } }
+  .row .col, .row-carousel .col {
+    width: 100%; }
 
 .row-carousel {
   overflow: visible; }
@@ -191,13 +201,18 @@ div[role=main] blockquote {
 .view-process-button {
   position: fixed;
   right: 0;
-  top: 460px;
-  padding: 40px 80px 40px 40px;
+  bottom: 60px;
+  padding: 20px 40px 20px 20px;
   text-decoration: none;
   color: #F9F9F9;
   background-color: rgba(49, 52, 57, 0.3);
   font-size: 1.6em;
   line-height: 1.3em; }
+  @media (min-width: 767px) {
+    .view-process-button {
+      top: 460px;
+      bottom: initial;
+      padding: 40px 80px 40px 40px; } }
   .view-process-button:hover {
     background-color: rgba(49, 52, 57, 0.6); }
 

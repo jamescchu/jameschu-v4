@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "compass/css3/flexbox";
+@import "utilities";
 
 $light: #F9F9F9;
 $dark: #313439;
@@ -84,12 +85,17 @@ header {
   li {
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: 47%;
-    min-height: 350px;
-    margin: 10px 10px;
+    min-height: 300px;
+    min-width: 100%;
+    margin: 10px 0;
     background-color: $gray2;
     background-size: cover;
     position: relative;
+    @include break('small') {
+      min-height: 350px;
+      min-width: 47%;
+      margin: 10px 10px;
+    }
 
     a {
       display: block;
@@ -104,7 +110,7 @@ header {
       right: 0;
       text-align: center;
       padding: 20px;
-      background-color: rgba($light, .8);
+      background-color: rgba($light, .5);
 
 
       h2 {
@@ -140,7 +146,13 @@ footer {
   @include display-flex;
 
   .half {
-    width: 45%;
+    width: 100%;
+    @include break('small') {
+      width: 45%;
+    }
+  }
+  .col {
+    width: 100%;
   }
 }
 
@@ -194,13 +206,18 @@ div[role=main] {
 .view-process-button {
   position: fixed;
   right: 0;
-  top: 460px;
-  padding: 40px 80px 40px 40px;
+  bottom: 60px;
+  padding: 20px 40px 20px 20px;
   text-decoration: none;
   color: $light;
   background-color: rgba($dark, 0.3);
   font-size: 1.6em;
   line-height: 1.3em;
+  @include break('small') {
+    top:  460px;
+    bottom:  initial;
+    padding: 40px 80px 40px 40px;
+  }
 
   &:hover {
     background-color: rgba($dark, 0.6);
