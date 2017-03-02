@@ -1,0 +1,51 @@
+
+@import "compass/css3/flexbox";
+
+$light: #F9F9F9;
+$dark: #313439;
+$gray: #7D8086;
+$gray2: #E8E9EA;
+$accent: #E7E8E9;
+
+header {
+  position: static;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+
+  h1 {
+    font-size: 3.6em;
+    text-transform: lowercase;
+    color: $dark;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      transition: all 300ms ease-in-out;
+      @include display-flex;
+      @include justify-content(center);
+
+      li {
+        a {
+          padding: 10px;
+          text-decoration: none;
+          color: $gray;
+          font-size: 1.6em;
+
+          &:hover {
+            color: $gray2;
+          }
+
+          &.active {
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,18 @@
     <link href="/css/screen.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
-    {% block extra_stylesheets %}{% endblock %}
+    <noscript id="deferred-styles">
+      {% block extra_stylesheets %}{% endblock %}
+    </noscript>
+
+    <style>
+      header { position: static; margin-top: 60px; text-align: center; margin-bottom: 80px; }
+      header h1 { font-size: 3.6em; text-transform: lowercase; color: #313439; font-weight: 300; margin-bottom: 20px; }
+      header nav ul { list-style-type: none; margin: 0; padding: 0; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; display: -webkit-flex; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+      header nav ul li a { padding: 10px; text-decoration: none; color: #7D8086; font-size: 1.6em; }
+      header nav ul li a:hover { color: #E8E9EA; }
+      header nav ul li a.active { color: #313439; }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,6 +72,17 @@
       stuck = false;
     }
   }
+  var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
 </script>
 {% block extra_scripts %}{% endblock %}
 </body>
