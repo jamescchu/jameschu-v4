@@ -21,6 +21,13 @@ body { background-color: #F9F9F9; padding: 20px; font-family: 'Lato', sans-serif
 
 .scrolled { position: fixed; top: 0; left: 0; right: 0; background-color: rgba(249, 249, 249, 0.8); -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; margin-top: 0; padding: 20px; z-index: 1000; }
 
+header { position: static; margin-top: 60px; text-align: center; margin-bottom: 80px; }
+header h1 { font-size: 3.6em; text-transform: lowercase; color: #313439; font-weight: 300; margin-bottom: 20px; }
+header nav ul { list-style-type: none; margin: 0; padding: 0; -webkit-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; display: -webkit-flex; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+header nav ul li a { padding: 10px; text-decoration: none; color: #7D8086; font-size: 1.6em; }
+header nav ul li a:hover { color: #E8E9EA; }
+header nav ul li a.active { color: #313439; }
+
 .works { width: calc(100% + 20px); margin: -10px; display: -webkit-flex; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-justify-content: flex-start; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .works li { background-position: center center; background-repeat: no-repeat; min-height: 300px; min-width: 100%; margin: 10px 0; background-color: #E8E9EA; background-size: cover; position: relative; }
 @media (min-width: 767px) { .works li { min-height: 350px; min-width: 47%; margin: 10px 10px; } }
