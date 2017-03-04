@@ -41,7 +41,6 @@ footer { margin: 80px 0; font-size: 1.4em; color: #7D8086; text-align: center; }
 .row, .row-carousel { overflow: hidden; margin: 80px 0; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; width: 100%; display: -webkit-flex; display: -webkit-box; display: -ms-flexbox; display: flex; }
 .row .half, .row-carousel .half { width: 100%; }
 @media (min-width: 767px) { .row .half, .row-carousel .half { width: 45%; } }
-.row .col, .row-carousel .col { width: 100%; }
 
 .row-carousel { overflow: visible; }
 
