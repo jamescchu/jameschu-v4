@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Chu</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>James Chu</h1>
+    <nav>
+            <ul>
+        <li><a href="/">work</a></li>
+        <li><a href="/about/">info</a></li>
+      </ul>
+          </nav>
+  </header>
+  <div role="main">
+  <div class="row">
+  <div class="half">
+    <p>
+      Hey there! I’m James, and I love to design just about anything. However you’ll probably find me as a product designer more often than not, but I don’t like to limit myself just yet.
+    </p>
+    <p>
+      Currently I’m constantly put through my paces at ArtCenter College of Design, and while the stress can be great at times, I never feel the slightest bit of doubt at what I love to do.
+    </p>
+    <p>
+      There’s always something new for me to explore, new people to meet, and new experiences to be had.
+    </p>
+  </div>
+</div>
+  </div>
+  <footer>
+    &copy; james chu.
+  </footer>
+</div>
+
+<script type="text/javascript">
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
+    }
+  }
+</script>
+</body>
+</html>

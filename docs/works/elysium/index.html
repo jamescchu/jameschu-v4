@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Chu - Elysium Book</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/flickity/2.0.5/flickity.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>Elysium Book</h1>
+    <nav>
+      <ul>
+    <li><a href="/critr/">prev</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="/great-writer/">next</a></li>
+  </ul>
+    </nav>
+  </header>
+  <div role="main">
+    <div class="row">
+  <div class="col half">
+    <p>
+      Elysium is a book responding to Paolo Soleri's concept of Arcologies. Hyper dense cities that allow people to go about their day without ever needing to drive at all.
+    </p>
+    <p>
+      This book is a reflection of my own perspective, being a devil's advocate, that this kind of concept is impossible to realize. All writing is written by myself, backed by research supporting my arguments.
+    </p>
+    <p>
+      Typography, composition and image layout were a focus on this project. The fading text in the background is a representation of the human nature's desire to expand and diversify itself. All the text within the book is hidden on the cover itself, alluding to it's contents.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/elysium/cover.jpg" alt="Cover Page" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/elysium/inside-ch1.jpg" alt="Inside Chapter 1" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>Division Pages</h2>
+    <p>
+      Division pages between chapters served as an introduction to a new topic, as well as presenting a scramble to research data and quotes, a website with related information is included on the bottom right of the page.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/elysium/inside-division.jpg" alt="Division Page" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/elysium/inside-image.jpg" alt="Image Spread" />
+  </div>
+</div>
+  </div>
+  <footer>
+    &copy; james chu.
+  </footer>
+</div>
+
+<script type="text/javascript">
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
+    }
+  }
+</script>
+<script async src="http://cdn.jsdelivr.net/flickity/2.0.5/flickity.pkgd.min.js"></script>
+</body>
+</html>

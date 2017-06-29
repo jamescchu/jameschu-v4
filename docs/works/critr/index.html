@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Chu - Critr</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/flickity/2.0.5/flickity.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>Critr</h1>
+    <nav>
+      <ul>
+    <li><a href="/major-league-gaming/">prev</a></li>
+    <li><a href="/">home</a></li>
+    <li><a href="/elysium/">next</a></li>
+  </ul>
+    </nav>
+  </header>
+  <div role="main">
+    <a href="./process/" class="view-process-button">
+  View <br />
+  Process
+</a>
+
+<div class="row">
+  <div class="col half">
+    <p>
+      Critr is a conceptual social media platform created and designed by myself. It is primarily focused on creating a community of designers that are sharing their work-in-progress photos or screenshot for critiques by  others. This can help relieve creative blocks or the hassle of having to send over broken screenshots and pictures of your work to others and a lengthy explanation of your intentions, only to get it wrong.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/critr/d-logo.png" alt="Critr Logo" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <p>
+      This app is designed to foster a community of designers who can give and recieve feedback from comments that are "pinned" onto specific areas of an image.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/critr/d-comment.png" alt="Commenting System" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>home navigation</h2>
+    <p>
+      The home screen is split into 3 seperate views that are curated to deliver relavent content, as well as allowing discoverability for new users.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+					<source src="../images/critr/d-home-scroll.mp4" type="video/mp4">
+		</video>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/critr/d-home.png" alt="Home Screens" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>tab navigation</h2>
+    <p>
+      Navigating between tabs are straight forward and simple. A quick fade transition indicates that they are navigating on the same visual "plane".
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+					<source src="../images/critr/d-tab-nav.mp4" type="video/mp4">
+		</video>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/critr/d-pages.png" alt="Collage of Tabs" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>project navigation</h2>
+    <p>
+      Projects transitions through a seperate "layer" to indicate the user is moving the project into view. This allows the user to visually comprehend where they are in the heigharchy without distracting their experience.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+					<source src="../images/critr/d-project-comment.mp4" type="video/mp4">
+		</video>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/critr/d-project.png" alt="Project View" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>comment zoom</h2>
+    <p>
+      Seamlessly zoom into comments on the image to get better context. Double-tap or hit the back arrow to return to the full image.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+					<source src="../images/critr/d-zoom.mp4" type="video/mp4">
+		</video>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>prototype</h2>
+    <p>
+      The entire interaction was carefully crafted in Framer. Now that you've seen some of it's capabilities, feel free to play with it yourself, many small micro-interactions have been implemented to replicate a native application as much as possible.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <iframe src="https://framer.cloud/Iihkn/" width="1440px" height="810px" scrolling="no" style="border:none;"></iframe>
+  </div>
+</div>
+  </div>
+  <footer>
+    &copy; james chu.
+  </footer>
+</div>
+
+<script type="text/javascript">
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
+    }
+  }
+</script>
+<script async src="http://cdn.jsdelivr.net/flickity/2.0.5/flickity.pkgd.min.js"></script>
+</body>
+</html>

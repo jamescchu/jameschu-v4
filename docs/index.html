@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Chu</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>James Chu</h1>
+    <nav>
+            <ul>
+        <li><a href="./">work</a></li>
+        <li><a href="./about/">info</a></li>
+      </ul>
+          </nav>
+  </header>
+  <div role="main">
+  <ul class="works">
+    <li style="background-image: url('./thumbnails/major-league-gaming.png');">
+    <a href="./works/major-league-gaming/">
+      <div class="info">
+        <h2>Major League Gaming</h2>
+        <h3>art direction, research and strategy</h3>
+      </div>
+    </a>
+  </li>
+    <li style="background-image: url('./thumbnails/critr.png');">
+    <a href="./works/critr/">
+      <div class="info">
+        <h2>Critr</h2>
+        <h3>ux/ui, research and strategy, prototyping</h3>
+      </div>
+    </a>
+  </li>
+    <li style="background-image: url('./thumbnails/elysium.png');">
+    <a href="./works/elysium/">
+      <div class="info">
+        <h2>Elysium Book</h2>
+        <h3>typography, book making, creative writing</h3>
+      </div>
+    </a>
+  </li>
+    <li style="background-image: url('./thumbnails/great-writer.png');">
+    <a href="./works/great-writer/">
+      <div class="info">
+        <h2>Great Writer Series</h2>
+        <h3>typography, print making</h3>
+      </div>
+    </a>
+  </li>
+  </ul>
+  </div>
+  <footer>
+    &copy; james chu.
+  </footer>
+</div>
+
+<script type="text/javascript">
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Chu - Great Writer Series</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link href="/css/screen.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/flickity/2.0.5/flickity.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>Great Writer Series</h1>
+    <nav>
+      <ul>
+    <li><a href="/elysium/">prev</a></li>
+    <li><a href="/">home</a></li>
+  </ul>
+    </nav>
+  </header>
+  <div role="main">
+    <div class="row">
+  <div class="col half">
+    <p>
+      Focusing on the life and legacy of writer Ralph Waldo Emerson, this booklet was created to document his life using various typographic and image layouts.
+    </p>
+    <p>
+      A particular challenge to this project was, Emerson lived in an age where photography was barely available, and thus, imagery of him is extremely scarce. Because of this, emphasis on typographic details were placed, and images were used to help break spreads of text.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/great-writer/cover.jpg" alt="Cover Page" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/great-writer/inside-ch1.jpg" alt="Inside Chapter 1" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/great-writer/inside-text.jpg" alt="Text Close Up" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="../images/great-writer/inside-img.jpg" alt="Image Close Up" />
+  </div>
+</div>
+  </div>
+  <footer>
+    &copy; james chu.
+  </footer>
+</div>
+
+<script type="text/javascript">
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
+    }
+  }
+</script>
+<script async src="http://cdn.jsdelivr.net/flickity/2.0.5/flickity.pkgd.min.js"></script>
+</body>
+</html>
