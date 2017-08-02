@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>James Chu</title>
+    <link>/</link>
+    <description>Recent content on James Chu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Critr</title>
+      <link>/works/critr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/critr/</guid>
+      <description>View Process   Critr is a conceptual social media platform created and designed by myself. It is primarily focused on creating a community of designers that are sharing their work-in-progress photos or screenshot for critiques by others. This can help relieve creative blocks or the hassle of having to send over broken screenshots and pictures of your work to others and a lengthy explanation of your intentions, only to get it wrong.</description>
+    </item>
+    
+    <item>
+      <title>Critr Case Study</title>
+      <link>/works/critr/process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/critr/process/</guid>
+      <description>Back to Project   Critr is a conceptual social media platform created and designed by myself. It is primarily focused on creating a community of designers that are sharing their work-in-progress photos or screenshot for critiques by others. This can help relieve creative blocks or the hassle of having to send over broken screenshots and pictures of your work to others and a lengthy explanation of your intentions, only to get it wrong.</description>
+    </item>
+    
+    <item>
+      <title>Elysium</title>
+      <link>/works/elysium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/elysium/</guid>
+      <description>Elysium is a book responding to Paolo Soleri&#39;s concept of Arcologies. Hyper dense cities that allow people to go about their day without ever needing to drive at all.  This book is a reflection of my own perspective, being a devil&#39;s advocate, that this kind of concept is impossible to realize. All writing is written by myself, backed by research supporting my arguments.  Typography, composition and image layout were a focus on this project.</description>
+    </item>
+    
+    <item>
+      <title>Great Writer Series</title>
+      <link>/works/great-writer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/great-writer/</guid>
+      <description>Focusing on the life and legacy of writer Ralph Waldo Emerson, this booklet was created to document his life using various typographic and image layouts.  A particular challenge to this project was, Emerson lived in an age where photography was barely available, and thus, imagery of him is extremely scarce. Because of this, emphasis on typographic details were placed, and images were used to help break spreads of text.</description>
+    </item>
+    
+    <item>
+      <title>HP Knoq</title>
+      <link>/works/hp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/hp/</guid>
+      <description>HP Knoq is the result of a HP Sponsored program at ArtCenter College of Design, and is a collaborative effort of 4 students from different majors.  At this time, presentation materials for this project is still in progress, there is a heck-of-a-lot of work to show and we want to do it right. However, to glimpse at our proud efforts, we have prepared a short video, showcasing our product and it&#39;s use-case in today&#39;s enviornments.</description>
+    </item>
+    
+    <item>
+      <title>Major League Gaming</title>
+      <link>/works/major-league-gaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/major-league-gaming/</guid>
+      <description>View Process   Major League Gaming was founded in 2002 as an eSports entertainment organization.  However, as it strives to become a household name around the world, it begins to fall short against it’s competitors. A new and more robust foundation must be built to reach for even greater heights.     mark  The new logo is designed to embody the essense of MLG. Combining the soul of gaming, competition and media into a singular package that is neither particular to any platform, game or country.</description>
+    </item>
+    
+    <item>
+      <title>Major League Gaming Case Study</title>
+      <link>/works/major-league-gaming/process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/major-league-gaming/process/</guid>
+      <description>Back to Project  challenge  Major League Gaming was founded in 2002 as an eSports entertainment organization.  However, as it strives to become a household name around the world, it begins to fall short against it’s competitors. A new and more robust foundation must be built to reach for even greater heights.     research  In order to create a new brand that is unique to MLG, I conducted a complete audit of the brand as it currently stands today.</description>
+    </item>
+    
+    <item>
+      <title>TEDxACCD 2017</title>
+      <link>/works/tedx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/tedx/</guid>
+      <description>TEDxACCD 2017 is the 3rd TEDx event hosted at ArtCenter College of Design, and will be held on November 04, 2017.  I joined the team in May as the primary designer and engineer for the event website. As part of a 20 person team, I worked with individuals from various backgrounds to deliver the best TEDx experience at ArtCenter.     process  With the day of the event nearing, we are currently in the midst of &#34;</description>
+    </item>
+    
+  </channel>
+</rss>

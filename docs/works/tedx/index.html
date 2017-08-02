@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Chu</title>
+
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/flickity/2.0.5/flickity.min.css">
+    <link rel="stylesheet" href="/css/main.css"/>
+
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicon/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon/favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon/favicon-152.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>TEDxACCD 2017</h1>
+        <nav>
+          <ul>
+            <li><a href="/">work</a></li>
+            <li><a href="/about">info</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+<div role="main">
+<div class="row">
+  <div class="col half">
+    <p>
+      TEDxACCD 2017 is the 3rd TEDx event hosted at ArtCenter College of Design, and will be held on November 04, 2017.
+    </p>
+    <p>
+      I joined the team in May as the primary designer and engineer for the event website. As part of a 20 person team, I worked with individuals from various backgrounds to deliver the best TEDx experience at ArtCenter.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="show">
+    <img src="/images/tedx/d-team.png" alt="The TEDx team at ArtCenter" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>process</h2>
+    <p>
+      With the day of the event nearing, we are currently in the midst of "production hell" to deliver a minimum viable product by mid-August. In addition to a desire to keep things under wraps until we are ready, I am unable to reveal some of the exciting things we have going.
+    </p>
+    <p>
+      In the intrim, the website is already live at <a href="//2017.tedxaccd.com">tedxaccd.com</a> with the date of the event already announced. This page was designed by me and my small team of 3. Below is a short history of the iterations we had created.
+    </p>
+  </div>
+</div>
+
+<div class="row-carousel">
+  <div class="show-carousel">
+    <div class="carousel" data-flickity='{ "imagesLoaded": true }'>
+      <img src="/images/tedx/d-soon.png" alt="First Iteration of the TEDx soon page" class="carousel-cell" />
+      <img src="/images/tedx/d-soon-2.png" alt="A second pass of the design with a clearer direction" class="carousel-cell" />
+      <img src="/images/tedx/d-soon-3.png" alt="The pixel perfect mockup of the final design." class="carousel-cell" />
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col half">
+    <h2>roles</h2>
+    <p>
+      As the main designer and engineer for the website, I lead my small team who consisted of: Yuma Naito and Josephine Law, to deliver solid results on tight deadlines.
+    </p>
+    <p>
+      I focused on educating my team on best practices and technical restrictions in a production site as they were still new to web medium. Yuma Naito designed the primary visual design for the landing page, further supplimented by Josephine Law with general art direction from me. The final design was then cleaned up and developed by me, which launched in time for the July 19 deadline.
+    </p>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  &copy; james chu.
+</footer>
+</div>
+
+<script type="text/javascript">
+  var h = document.querySelector("nav");
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+  }
+
+  window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+      h.classList.add('scrolled');
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      h.classList.remove('scrolled');
+      stuck = false;
+    }
+  }
+</script>
+<script src="/app.js"></script>
+<script async src="//cdn.jsdelivr.net/flickity/2.0.5/flickity.pkgd.min.js"></script>
+</body>
+</html>
+
